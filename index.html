@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/webp" href="logo-bg-white.webp">
@@ -71,14 +72,18 @@
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             margin: 20px 0;
         }
 
         .social-links a {
             color: var(--soft-blue);
             text-decoration: none;
-            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--warm-brown);
         }
 
         .subscribe-form {
@@ -153,31 +158,32 @@
 
         <nav class="nav-bar">
             <a href="#about">About</a>
-            <a href="#classes">Classes</a>
             <a href="#gallery">Gallery</a>
+            <a href="#classes">Classes</a>
             <a href="#contact">Contact</a>
+            <a href="#visit">Visit Us</a>
         </nav>
 
         <div class="main-content">
             <section class="section">
-                <h2>Find Inspiration at Blue Sky Quilt Shop</h2>
-                <div id="about">
+                <h2 id="about">Find Inspiration at Blue Sky Quilt Shop</h2>
+                <div>
                     Welcome to Blue Sky Quilt Shop, your premier destination for high-quality quilting fabrics and endless creative possibilities. Nestled in the charming downtown of LeClaire, Iowa, we invite you to explore our ever-growing collection of fabric and discover new inspiration. Whether you're a seasoned quilter or just starting your journey, our friendly staff and bountiful samples of inspirational project ideas and kits will ignite your creativity and foster a sense of community. Shop at Blue Sky Quilt Shop, a place of friendship and fabric!
                 </div>
             </section>
 
             <section class="section">
-                <h2>Discover the Fabric of Inspiration</h2>
+                <h2 id="gallery">Discover the Fabric of Inspiration</h2>
                 <div class="slideshow" id="quilt-slideshow"/>
             </section>
 
             <section class="section">
-                <h2>Our Quilting Community</h2>
+                <h2 id="classes">Our Quilting Community</h2>
                 <div class="slideshow" id="class-slideshow"/>
             </section>
 
             <section class="section">
-                <h2>Join Our Quilting Family</h2>
+                <h2 id="contact">Join Our Quilting Family</h2>
                 <div class="subscribe-form">
                     <p>Subscribe to our newsletter for updates, tips, and special offers!</p>
                     <input type="email" placeholder="Enter your email address">
@@ -194,7 +200,7 @@
             </section>
 
             <section class="section business-hours">
-                <h2>Visit Us</h2>
+                <h2 id="visit">Visit Us</h2>
                 <p>123 Main Street<br>Le Claire, Iowa 52753</p>
                 <div class="map-container">
                     <iframe
@@ -212,9 +218,12 @@
             </section>
 
             <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Yelp</a>
-                <a href="#">Etsy</a>
+                <a href="https://www.facebook.com/people/Blue-Sky-Quilt-Shop/61566760321480/" aria-label="Visit our Facebook page">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.yelp.com/biz/byg5T15fSCNvGE5DUqJmOA" aria-label="Visit our Yelp page">
+                    <i class="fab fa-yelp fa-2x"></i>
+                </a>
             </div>
         </div>
 
